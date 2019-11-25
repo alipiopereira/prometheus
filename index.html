@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <link rel="icon" href="./static/img/icon.jpg" />
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <title>Prometheus | IO</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="/dist/build.js"></script>
+
+  <script>
+    var morphing = anime({
+      targets: 'svg path',
+      d: 'M0.500001 214.249L0 42.2497C0 42.2497 36.375 2.24922 86 1.24923C135.625 0.249249 169.149 25.2492 207 25.2492C305.25 25.2492 328.511 -1.6331 415.5 0.249235C502.489 2.13157 519.5 34.2492 595.5 34.2492C671.5 34.2492 687.5 20.2493 752 24.2492C816.5 28.2492 831.563 67.0432 911.5 58.2492C991.437 49.4551 995.991 7.99932 1082 0.749286C1168.01 -6.50073 1200.5 41.2497 1200.5 41.2497L1200.5 214.249L0.500001 214.249Z',
+      easing: 'easeOutQuad',
+      duration: 9000,
+      loop: true,
+      direction: 'alternate',
+    });
+  </script>
+</body>
+
+</html>
